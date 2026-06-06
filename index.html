@@ -9,7 +9,6 @@
 <meta name="author" content="Saba Shahin">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://sabashahin.github.io/">
-<!-- Font Awesome CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Saba Shahin - Physiotherapist">
@@ -91,7 +90,6 @@ body {
   transition: background 0.25s, color 0.25s;
 }
 
-/* HEADER */
 header {
   position: sticky;
   top: 0;
@@ -207,14 +205,12 @@ header {
   line-height: 1;
 }
 
-/* MAIN */
 main {
   max-width: 860px;
   margin: 0 auto;
   padding: 5rem 2rem 6rem;
 }
 
-/* HERO — sidebar left, bio right */
 .hero { margin-bottom: 5rem; }
 
 .hero-layout {
@@ -224,7 +220,6 @@ main {
   align-items: start;
 }
 
-/* LEFT SIDEBAR */
 .hero-sidebar {
   display: flex;
   flex-direction: column;
@@ -270,6 +265,7 @@ main {
   font-size: 12px;
   color: var(--faint);
 }
+
 .social-row {
   display: flex;
   justify-content: center;
@@ -288,7 +284,7 @@ main {
   color: var(--accent);
   transform: translateY(-2px);
 }
-  /* RIGHT BIO */
+
 .hero-text { min-width: 0; }
 
 .greeting {
@@ -317,7 +313,6 @@ main {
 
 .bio a:hover { border-color: var(--accent); }
 
-/* SECTIONS */
 section { margin-bottom: 4rem; }
 
 h2 {
@@ -330,7 +325,6 @@ h2 {
   border-bottom: 1px solid var(--border);
 }
 
-/* ENTRIES */
 .entry { margin-bottom: 2rem; }
 .entry:last-child { margin-bottom: 0; }
 
@@ -388,12 +382,7 @@ h2 {
 
 .vol { font-size: 13px; color: var(--faint); font-style: italic; }
 
-/* SKILLS — consistent grouped layout */
-.skills-block {
-  display: grid;
-  gap: 1.4rem;
-}
-
+.skills-block { display: grid; gap: 1.4rem; }
 .skill-group { display: flex; flex-direction: column; gap: 0.5rem; }
 
 .skill-cat {
@@ -404,11 +393,7 @@ h2 {
   text-transform: uppercase;
 }
 
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
 
 .tag {
   font-size: 13.5px;
@@ -420,7 +405,6 @@ h2 {
   line-height: 1.65;
 }
 
-/* RESEARCH */
 .r-entry { margin-bottom: 1.7rem; }
 .r-entry:last-child { margin-bottom: 0; }
 
@@ -455,7 +439,6 @@ h2 {
 
 .r-meta { font-size: 13px; color: var(--faint); font-style: italic; }
 
-/* FOOTER */
 footer {
   max-width: 860px;
   margin: 0 auto;
@@ -470,7 +453,6 @@ footer {
 
 footer p { font-size: 13px; color: var(--faint); }
 
-/* SCROLL TOP */
 .scroll-top {
   position: fixed;
   bottom: 1.75rem;
@@ -493,7 +475,6 @@ footer p { font-size: 13px; color: var(--faint); }
 .scroll-top.show { opacity: 1; pointer-events: auto; }
 .scroll-top:hover { color: var(--text); }
 
-/* ANIMATIONS */
 @keyframes up {
   from { opacity: 0; transform: translateY(12px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -508,7 +489,6 @@ section:nth-of-type(5)  { animation-delay: 0.20s; }
 section:nth-of-type(6)  { animation-delay: 0.24s; }
 section:nth-of-type(7)  { animation-delay: 0.28s; }
 
-/* RESPONSIVE */
 @media (max-width: 700px) {
   main { padding: 3rem 1.25rem 5rem; }
   .header-inner { padding: 0 1.25rem; }
@@ -529,7 +509,6 @@ section:nth-of-type(7)  { animation-delay: 0.28s; }
   }
 
   .avatar { width: 80px; height: 80px; font-size: 1.3rem; margin-bottom: 0; flex-shrink: 0; }
-
   .sidebar-info { display: flex; flex-direction: column; gap: 0.2rem; }
 
   .social-row {
@@ -558,9 +537,9 @@ section:nth-of-type(7)  { animation-delay: 0.28s; }
   <div class="header-inner">
     <a href="#" class="logo">Saba Shahin</a>
     <div class="nav-desktop">
-      <a href="#clinical">Clinical</a>
-      <a href="#skills">Skills</a>
       <a href="#research">Research</a>
+      <a href="#skills">Skills</a>
+      <a href="#clinical">Clinical</a>
       <a href="#education">Education</a>
       <button class="theme-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle light/dark">
         <svg id="themeIcon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -576,9 +555,9 @@ section:nth-of-type(7)  { animation-delay: 0.28s; }
 
 <div class="mobile-drawer" id="drawer">
   <button class="close-btn" id="closeBtn" aria-label="Close menu">&times;</button>
-  <a href="#clinical">Clinical</a>
-  <a href="#skills">Skills</a>
   <a href="#research">Research</a>
+  <a href="#skills">Skills</a>
+  <a href="#clinical">Clinical</a>
   <a href="#education">Education</a>
 </div>
 
@@ -596,53 +575,125 @@ section:nth-of-type(7)  { animation-delay: 0.28s; }
           <p class="sidebar-role">BPT Graduate<br>Physiotherapist</p>
           <p class="sidebar-loc">New Delhi, India</p>
 
-<div class="social-row">
-  <a href="mailto:sabashahin021@gmail.com" id="emailBtn" aria-label="Email">
-    <i class="fas fa-envelope"></i>
-  </a>
-
-  <a href="https://www.linkedin.com/in/saba-shahin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-    <i class="fab fa-linkedin"></i>
-  </a>
-
-  <a href="https://medium.com/@sabaimtz" target="_blank" rel="noopener noreferrer" aria-label="Medium">
-    <i class="fab fa-medium"></i>
-  </a>
-
-  <!-- Scholar -->
-  <!--
-  <a href="https://scholar.google.com/citations?user=sabashahin" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
-    <i class="fas fa-graduation-cap"></i>
-  </a>
-  -->
-</div>
+          <div class="social-row">
+            <a href="#" id="emailBtn" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/saba-shahin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://medium.com/@sabaimtz" target="_blank" rel="noopener noreferrer" aria-label="Medium">
+              <i class="fab fa-medium"></i>
+            </a>
+            <a href="Saba_Shahin_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Résumé" title="Résumé">
+              <i class="fas fa-file-lines"></i>
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- RIGHT BIO -->
       <div class="hero-text">
         <h1 class="greeting">Hey, I'm Saba.</h1>
-     <div class="bio">
-  <p>
-    I'm a physiotherapy graduate from <a href="https://www.jamiahamdard.ac.in/" target="_blank" rel="noopener noreferrer">Jamia Hamdard</a>, New Delhi, with a particular interest in orthopedic and musculoskeletal rehabilitation.
-  </p>
-
-  <p>
-    My clinical training has involved working across government hospitals and a medical college, where I worked with patients experiencing low back pain, post-surgical knee and shoulder conditions, and other musculoskeletal disorders. These experiences taught me the importance of careful assessment and movement analysis in rehabilitation.
-  </p>
-
-  <p>
-    Alongside clinical practice, I have been involved in research on subjective cognitive decline, sleep quality, and daily functioning in middle-aged adults. I am particularly interested in the intersection of rehabilitation and artificial intelligence, including the evaluation of AI-generated exercise rehabilitation content and the broader role of digital health technologies in physiotherapy.
-  </p>
-
-  <p>
-    I am always happy to connect and collaborate on projects related to rehabilitation, digital health, and AI in healthcare. Feel free to reach out at <a href="#" id="emailLink">sabashahin021 [at] gmail [dot] com</a>.
-  </p>
-</div>
+        <div class="bio">
+          <p>
+            I'm a physiotherapist and BPT graduate from <a href="https://www.jamiahamdard.ac.in/" target="_blank" rel="noopener noreferrer">Jamia Hamdard</a>, New Delhi. My main interest is orthopedic and musculoskeletal rehabilitation, and what I care about most is careful assessment and understanding how people move.
+          </p>
+          <p>
+            Research is a big part of what I do. I've studied subjective cognitive decline, sleep, and quality of life in middle-aged adults, and I'm co-authoring a book chapter on telerehabilitation education. I'm also building a framework to evaluate whether AI-generated exercise videos are clinically accurate.
+          </p>
+          <p>
+            I'm always happy to connect on rehabilitation, digital health, or AI in healthcare. If that's your space too, reach out at <a href="#" id="emailLink">sabashahin021 [at] gmail [dot] com</a>.
+          </p>
+        </div>
       </div>
 
     </div>
   </div>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <h2>Research</h2>
+    <div class="r-entry">
+      <p class="r-title">Benchmarking AI-Generated Videos for Rehabilitation <span class="badge">Ongoing</span></p>
+      <p class="r-desc">Building a framework to evaluate the clinical accuracy and biomechanical correctness of AI-generated exercise videos before they reach rehabilitation practice.</p>
+      <p class="r-meta">Methods: AI evaluation, biomechanical analysis, qualitative assessment frameworks</p>
+    </div>
+    <div class="r-entry">
+      <p class="r-title">Subjective Cognitive Decline in Middle-Aged Adults</p>
+      <p class="r-desc">Cross-sectional survey (n=150). Characterised the burden of SCD and its sleep, cognitive, and quality-of-life correlates in urban North Indian adults aged 40–60. Final year project.</p>
+      <p class="r-meta">Tools: SCD-Q21, MoCA, PSQI, WHOQOL-BREF</p>
+    </div>
+    <div class="r-entry">
+      <p class="r-title">Telerehabilitation Education and Training <span class="badge">Forthcoming</span></p>
+      <p class="r-desc">Book chapter exploring what clinicians and students need to learn about remote rehabilitation, how to teach it, and how competence should be assessed. Co-authored, lead author.</p>
+      <p class="r-meta">Edited volume, forthcoming 2026</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-block">
+      <div class="skill-group">
+        <span class="skill-cat">Clinical</span>
+        <div class="tags">
+          <span class="tag">Patient Assessment</span>
+          <span class="tag">Manual Therapy</span>
+          <span class="tag">Mobilization</span>
+          <span class="tag">Electrotherapy (TENS, IFT, Ultrasound)</span>
+          <span class="tag">Exercise Therapy</span>
+          <span class="tag">Pain Management</span>
+          <span class="tag">Balance Training</span>
+          <span class="tag">Orthopedic Rehabilitation</span>
+          <span class="tag">Neurological Rehabilitation</span>
+          <span class="tag">Treatment Planning</span>
+          <span class="tag">Functional Assessment</span>
+          <span class="tag">Patient Education</span>
+          <span class="tag">Clinical Documentation</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <span class="skill-cat">Assessment Tools</span>
+        <div class="tags">
+          <span class="tag">VAS</span>
+          <span class="tag">MMT</span>
+          <span class="tag">ROM Measurement</span>
+          <span class="tag">Berg Balance Scale</span>
+          <span class="tag">MoCA</span>
+          <span class="tag">PSQI</span>
+          <span class="tag">WHOQOL-BREF</span>
+          <span class="tag">SCD-Q21</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <span class="skill-cat">Research</span>
+        <div class="tags">
+          <span class="tag">Statistical Analysis</span>
+          <span class="tag">Quantitative Methods</span>
+          <span class="tag">Literature Review</span>
+          <span class="tag">Data Analysis</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <span class="skill-cat">Documentation Tools</span>
+        <div class="tags">
+          <span class="tag">MS Word</span>
+          <span class="tag">Excel</span>
+          <span class="tag">PowerPoint</span>
+          <span class="tag">Overleaf (LaTeX)</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <span class="skill-cat">Languages</span>
+        <div class="tags">
+          <span class="tag">English (Fluent)</span>
+          <span class="tag">Hindi (Native)</span>
+          <span class="tag">Urdu (Native)</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- CLINICAL -->
   <section id="clinical">
@@ -705,91 +756,6 @@ section:nth-of-type(7)  { animation-delay: 0.28s; }
     </div>
   </section>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-block">
-
-      <div class="skill-group">
-        <span class="skill-cat">Clinical</span>
-        <div class="tags">
-          <span class="tag">Patient Assessment</span>
-          <span class="tag">Manual Therapy</span>
-          <span class="tag">Mobilization</span>
-          <span class="tag">Electrotherapy (TENS, IFT, Ultrasound)</span>
-          <span class="tag">Exercise Therapy</span>
-          <span class="tag">Pain Management</span>
-          <span class="tag">Balance Training</span>
-          <span class="tag">Orthopedic Rehabilitation</span>
-          <span class="tag">Neurological Rehabilitation</span>
-          <span class="tag">Treatment Planning</span>
-          <span class="tag">Functional Assessment</span>
-          <span class="tag">Patient Education</span>
-          <span class="tag">Clinical Documentation</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <span class="skill-cat">Assessment Tools</span>
-        <div class="tags">
-          <span class="tag">VAS</span>
-          <span class="tag">MMT</span>
-          <span class="tag">ROM Measurement</span>
-          <span class="tag">Berg Balance Scale</span>
-          <span class="tag">MoCA</span>
-          <span class="tag">PSQI</span>
-          <span class="tag">WHOQOL-BREF</span>
-          <span class="tag">SCD-Q21</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <span class="skill-cat">Research</span>
-        <div class="tags">
-          <span class="tag">Statistical Analysis</span>
-          <span class="tag">Quantitative Methods</span>
-          <span class="tag">Literature Review</span>
-          <span class="tag">Data Analysis</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <span class="skill-cat">Documentation Tools</span>
-        <div class="tags">
-          <span class="tag">MS Word</span>
-          <span class="tag">Excel</span>
-          <span class="tag">PowerPoint</span>
-          <span class="tag">Overleaf (LaTeX)</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <span class="skill-cat">Languages</span>
-        <div class="tags">
-          <span class="tag">English (Fluent)</span>
-          <span class="tag">Hindi (Native)</span>
-          <span class="tag">Urdu (Native)</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- RESEARCH -->
-  <section id="research">
-    <h2>Research</h2>
-    <div class="r-entry">
-      <p class="r-title">Benchmarking AI-Generated Videos for Rehabilitation <span class="badge">Ongoing</span></p>
-      <p class="r-desc">Building a framework to evaluate the clinical accuracy and biomechanical correctness of AI-generated exercise videos before they reach rehabilitation practice.</p>
-      <p class="r-meta">Methods: AI evaluation, biomechanical analysis, qualitative assessment frameworks</p>
-    </div>
-    <div class="r-entry">
-      <p class="r-title">Subjective Cognitive Decline in Middle-Aged Adults</p>
-      <p class="r-desc">Cross-sectional survey (n=150). Characterised the burden of SCD and its sleep, cognitive, and quality-of-life correlates in urban North Indian adults aged 40–60. Final year project.</p>
-      <p class="r-meta">Tools: SCD-Q21, MoCA, PSQI, WHOQOL-BREF</p>
-    </div>
-  </section>
-
   <!-- EDUCATION -->
   <section id="education">
     <h2>Education</h2>
@@ -802,7 +768,14 @@ section:nth-of-type(7)  { animation-delay: 0.28s; }
     </div>
   </section>
 
-  <!-- VOLUNTEER -->
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <h2>Certifications and Interests</h2>
+    <p style="font-size:15px; color:var(--text-soft); margin-bottom:0.4rem;">Health Informatics 101: Digital Health Dynamics, Mini Course, 2024</p>
+    <p style="font-size:14px; color:var(--muted);">Research interests: Sleep Medicine, Cognitive Neuroscience, AI in Healthcare, Digital Health</p>
+  </section>
+
+<!-- VOLUNTEER -->
   <section id="volunteer">
     <h2>Volunteer</h2>
     <div class="entry">
@@ -817,14 +790,7 @@ section:nth-of-type(7)  { animation-delay: 0.28s; }
     </div>
   </section>
 
-  <!-- CERTIFICATIONS -->
-  <section id="certifications">
-    <h2>Certifications and Interests</h2>
-    <p style="font-size:15px; color:var(--text-soft); margin-bottom:0.4rem;">Health Informatics 101: Digital Health Dynamics, Mini Course, 2024</p>
-    <p style="font-size:14px; color:var(--muted);">Research interests: Sleep Medicine, Cognitive Neuroscience, AI in Healthcare</p>
-  </section>
-
-</main>
+  </main>
 
 <footer>
   <p>Saba Shahin, BPT, Jamia Hamdard</p>
